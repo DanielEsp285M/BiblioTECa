@@ -1,0 +1,20 @@
+[{
+  "_id": {
+    "$oid": "6553bc72a98955de430a008c"
+  },
+  "idUsuario": "1",
+  "fechaPresta": {
+    "$date": "2004-06-01T00:00:00.000Z"
+  },
+  "fechaDevo": {
+    "$date": "2006-06-01T00:00:00.000Z"
+  },
+  "Libros": [
+    {
+      "idLibro": "2"
+    },
+    {
+      "idLibro": "3"
+    }
+  ]
+}]

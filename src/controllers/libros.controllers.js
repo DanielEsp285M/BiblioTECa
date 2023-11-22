@@ -1,17 +1,15 @@
-import {pool} from '../db.js'
+import {pool} from "../db.js";
 
 //GET
 export const getLibros = async(req, res) => {
 try {
-    const [rows] = await pool.query('SELECT * FROM Libros')
-    res.json(rows)
+    const [rows] = await pool.query('SELECT * FROM Libros');
+    res.json(rows);
 
 } catch (error) {
- return res.status(500).json({
-    message: 'No jalo'
- })   
+ return res.status(500).json({message: 'No jalo'});
 }
-}
+};
 
 //POST
 export const createLibros = async(req, res) => {
@@ -36,9 +34,9 @@ export const createLibros = async(req, res) => {
     } catch (error) {
         return res.status(500).json({
             message: 'No jalo'
-         })   
+         });   
     }
-}
+};
 
 //GET BY ID
 export const getLibro = async(req, res) => {

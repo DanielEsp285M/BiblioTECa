@@ -34,3 +34,4 @@ values
 ('Daniel', 'Espino', 'Morales', 'Admin', 10);
 
 select*from libros;
+select*from usuarios;

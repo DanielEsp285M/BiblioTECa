@@ -5,6 +5,7 @@
 import express from "express";
 import librosR from "./routes/libros.routes.js"; 
 import indexR from "./routes/index.routes.js"; 
+import usuariosR from "./routes/usuarios.routes.js";
 
 const app = express();
 
@@ -12,6 +13,7 @@ app.use(express.json());
 
 app.use("/", indexR);
 app.use("/api", librosR);//activa rutas
+app.use("/api", usuariosR);
 
 app.use((req, res, next) => {
     res.status(404).json({
